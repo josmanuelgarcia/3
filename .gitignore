@@ -1,24 +1,66 @@
-# Compiled class file
-*.class
+package practica3;
 
-# Log file
-*.log
+import java.util.Scanner;
 
-# BlueJ files
-*.ctxt
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+public class Practica3 {
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        float a, b, c, d, e;
+        
+        Scanner lectura = new Scanner(System.in);
+        
+        System.out.println("dame el numero a");
+        a = lectura.nextInt();
+        
+        System.out.println("dame el numero b");
+        b = lectura.nextInt();
+        
+        System.out.println("dame el numero c");
+        c = lectura.nextInt();
+        
+        System.out.println("Escribe el numero d");
+        d = lectura.nextInt();
+        
+        System.out.print("Escribe el numero e");
+        e = lectura.nextInt();
+        
+        if (a>b && a>c && a>d && a>e){
+            System.out.println("mayor"+a);
+        } 
+        if (b>b && b>c && b>d && b>e){
+            System.out.println("mayor"+b);
+        }
+        if (c>b && c>c && c>d && c>e){
+            System.out.println("mayor"+c);
+        }
+        if (d>b && d>c && d>d && d>e){
+            System.out.println("mayor"+d);
+        }
+        if (e>b && e>c && e>d && e>e){
+            System.out.println("mayor"+e);
+        }
+        
+        
+        if (a>b && a>c && a>d && a>e){
+            System.out.println("menores"+a);
+        }
+        if (b>b && b>c && b>d && b>e){
+            System.out.println("menores"+b);
+        }
+        if (c>b && c>c && c>d && c>e){
+            System.out.println("menores"+c);
+        }    
+        if (d>b && d>c && d>d && e>e){
+            System.out.println("menores"+d);
+        }
+        if (e>b && e>c && e>d && e>e){
+            System.out.println("menores"+e);
+        }
+        
+    }
+    
+}
